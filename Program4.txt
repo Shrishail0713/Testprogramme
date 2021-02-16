@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<stdlib.h>
+int *q;
+int main()
+{
+ int *p;
+ p = (int *) malloc(sizeof(int)); // dynamic
+ *p = 10 ;
+ printf("%d¥n",(*p));
+
+ int *q;
+ q = (int *) malloc(sizeof(int)); // dynamic
+ *q = 20 ;
+ printf("%d¥n",(*q));
+} 
