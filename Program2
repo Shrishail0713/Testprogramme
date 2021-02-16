@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+ int No=0; int Big=0; int i=0;
+ int arr[10];
+ printf("Enter 10 numbers:", arr);
+ do{
+ scanf("%d",&No);
+ if(No>Big)
+ {
+ Big = No;
+ }
+ i++;
+ } while(i<10);
+ printf("Biggest no is %d",Big);
+ return 0;
+}
