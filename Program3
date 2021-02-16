@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+
+ int a[10];
+ int flag =0;
+ int *p;
+ int i;
+ int num;
+ int len=0;
+ int found;
+
+ p = (int *) malloc(sizeof(int)*10);
+
+ printf("enter number of elements:");
+
+ for (i=0;i<10;i++)
+ {
+ scanf("%d",&(*(p+i)));
+ len++;
+ }
+ printf("¥nlength of array :%d",len);
+ 
+
+ printf("¥n enter the number to search:");
+
+ scanf("%d",&num);
+
+ for (i=0;i<10;i++)
+ {
+ if (num==(*(p+i)))
+ {
+ flag=1;
+
+ }
+ }
+ if(flag==1)
+ {
+ printf("¥nfound");
+
+ }
+ else
+ printf("¥n not found");
+
+
+ return 0;
+
+
+
+}
